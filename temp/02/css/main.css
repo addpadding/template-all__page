@@ -1,0 +1,377 @@
+:root {
+    --main-color: #ff5722;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+.container {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+#header-01 {}
+/* =================== */
+
+.header {
+    height: 100vh;
+    background-image: url(../img/banner1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    color: white;
+}
+
+.header .before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 60%);
+}
+
+/* #01 */
+.header .logo {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header .logo img {
+    width: 170px;
+    /* float: left; */
+}
+
+.header .logo button {
+    width: 100px;
+    padding: 8px 0;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 50px;
+    background: transparent;
+    color: white;
+    /* float: right; */
+}
+
+/* #02 */
+.header .info {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header .info h2 {
+    font-size: 55px;
+}
+
+.header .info p {
+    margin: 18px 0;
+}
+
+/* #03 */
+
+.header form {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 80px;
+    background-color: white;
+    border-radius: 50px;
+    padding: 8px;
+}
+
+.header form input[type="text"] {
+    border: none;
+    font-size: 22px;
+    color: black;
+    padding: 0 3px;
+    outline: none;
+}
+
+.header form input[type="submit"] {
+    background-color: #009688;
+    border: none;
+    font-size: 22px;
+    color: white;
+    padding: 6px 8px;
+    border-radius: 50px;
+}
+
+
+#features-02 {}
+/* =================== */
+
+.features {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.features .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 20px;
+}
+
+
+.features h2 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+.features .box {
+    box-shadow: 0px 0px 10px -1px rgb(37 73 214 / 18%);
+}
+
+/* #01 111 >>> */
+.features .box .imgs {
+    position: relative;
+}
+
+.features .box .imgs img {
+    /* width: 100px; */
+    max-width: 100%;
+}
+
+/* #01 111 >>> 100 ==== */
+.features .box .price {
+    width: 50px;
+    height: 50px;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+    bottom: -24px;
+}
+
+/* #01 111 >>> 200 ==== */
+.features .box .ratin {
+    padding: 3px;
+    background-color: white;
+    float: right;
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+}
+
+.features .box .ratin i {
+    font-size: 15px;
+    color: var(--main-color);
+}
+
+/* #01 222 >>> */
+.features .box .text {
+    padding: 20px;
+    text-align: justify;
+}
+
+.features .box .text h3 {
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.features .box .text p {
+    margin: 10px 0 20px;
+}
+
+.features .box .text .icon i {
+    margin-right: 5px;
+    color: var(--main-color);
+}
+
+.features .box .text .icon span h4 {
+    display: inline-block;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+#gallery-03 {}
+/* =================== */
+
+.gallery {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #efefef;
+}
+
+.gallery .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 15px;
+}
+
+.gallery h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.gallery .box {
+    padding: 6px;
+    border-radius: 12px;
+    position: relative;
+}
+
+/* #01 */
+.gallery .box img {
+    max-width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gallery .box img:hover {
+    transform: scale(1.1);
+}
+
+.gallery .box h3 {
+    font-size: 20px;
+    text-shadow: -2px 2px 2px #000;
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#banner-04 {}
+/* =================== */
+
+.banner {
+    /* height: 400px; */
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(../img/banner2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner .container {
+
+}
+
+/* #01 */
+
+.banner .box {
+    padding: 70px 0;
+    background-color: rgb(0 0 0 / 70%);
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* #01 111 >>> */
+.banner .box .text {
+    flex-basis: 64%;
+    margin: 0px 0 0 128px;
+}
+
+.banner .box .text p {
+    font-size: 14px;
+}
+
+/* #01 222 >>> */
+.banner .box a {
+    flex-basis: 10%;
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    margin: auto;
+    padding: 15px 30px;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+#testimonials-00 {}
+/* =================== */
+
+.testimonials {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.testimonials .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+
+}
+
+.testimonials > h2 {
+    text-align: center;
+}
+
+/* #01 */
+.testimonials .box {
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgb(0 0 100 / 20%);
+    padding-bottom: 50px;
+    position: relative;
+}
+
+/* #01 111 >>> */
+.testimonials .box .text {
+
+}
+
+.testimonials .box .text p {
+    padding: 50px 10px 10px;
+}
+
+.testimonials .box .text h3 {
+
+}
+
+.testimonials .box .text h4 {
+
+}
+
+/* #01 222  >>> */
+.testimonials .box .imgs {
+
+}
+
+.testimonials .box .imgs img {
+    position: absolute;
+    height: 60px;
+    border-radius: 50%;
+    top: 77%;
+    left: 47%;
+}
+
+#aaa-00 {}
+/* =================== */
+
+.aaa {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.aaa .container {
+
+}
+
+/* #01 */
+
+.aaa {
+
+}
